@@ -15,12 +15,22 @@
       [:div {:class "container"}
         [:div {:class "header"}
           [:ul {:class "nav nav-pills pull-right"}
-            [:li {:class "active"} [:a {:href "#"} "Home"]]
+            [:li {:class "active"} [:a {:href "/"} "Home"]]
             [:li [:a {:href "/about"} "About"]]
             [:li [:a {:href "/contact"} "Contact"]]
-            [:li [:a {:href "/auth/login"} "Login"]]]
+            [:li [:a {:href "/auth/login"} "Login"]]
+            [:li [:a {:href "/auth/register"} "Register"]]]
           [:h3 {:class "text-muted"} "Corum"]]
         body
         [:div {:class "footer"}
           [:p "&copy; 2013. Allrights Reserved."]]]
       ]))
+
+(defmacro with-row [body & rest]
+  [:div {:class "row"} body rest])
+
+(defmacro with-dialog [label elem]
+  [:div {:class "col-md-8 col-md-offset-2"} label elem])
+
+(defmacro with-form-group [body & rest]
+  [:div {:class "form-group"} body rest])

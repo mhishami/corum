@@ -5,9 +5,9 @@
 (defn index-page []
   (layout/base "Home"
     [:div {:class "jumbotron"}
-      [:h1 "Hello"]
-      [:p {:class "lead"} "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus"]
-      [:p [:a {:class "btn btn-lg btn-success" :href "#" :role "button"} "Sign-Up Today"]]]
+      [:h1 "Home"]
+      [:p {:class "lead"} "Corum is a community driven forum application"]
+      [:p [:a {:class "btn btn-lg btn-success" :href "/auth/register" :role "button"} "Sign-Up Today"]]]
     ))
 
 (defn contact-page []
