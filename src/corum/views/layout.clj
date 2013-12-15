@@ -29,7 +29,7 @@
       body
       [:br]
       [:div {:class "footer"}
-       [:p "&copy; 2013. Allrights Reserved."]]]]))
+       [:p "&copy; 2013 Hisham Ismail. All rights Reserved."]]]]))
 
 (defn with-title [title]
   [:h2 title])
