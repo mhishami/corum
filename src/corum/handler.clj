@@ -8,7 +8,7 @@
             [corum.views.layout :as layout]))
 
 (defn not-found []
-  (layout/base "Opps!!"
+  (layout/base {} "Opps!!"
     [:div {:class "jumbotron"}
      [:h1 "Sorry!"]
      [:p {:class "lead"} "I cannot find the page you're looking for"

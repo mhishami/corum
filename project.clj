@@ -8,6 +8,7 @@
                  [lobos "0.8.0"]
                  [korma "0.3.0-RC6"]
                  [postgresql/postgresql "9.1-901.jdbc4"]
+                 [com.taoensso/timbre "3.0.0-RC2"]
                  [log4j "1.2.15" :exclusions [javax.mail/mail
                                               javax.jms/jms
                                               com.sun.jdmk/jmxtools
