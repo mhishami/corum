@@ -25,8 +25,7 @@
             (submit-button {:class "btn btn-default btn-success"} "Login") "&nbsp;"
             (reset-button {:class "btn"} "Reset")))
         (link-to "/auth/register" "Register") " | "
-        (link-to "/auth/reset" "Forgot password")
-        ))))
+        (link-to "/auth/reset" "Forgot password")))))
 
 
 (defn do-login [{:keys [email password]}]
