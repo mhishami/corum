@@ -1,0 +1,12 @@
+{% extends "corum/views/templates/base.html" %}
+
+{% block content %}
+
+<div class="jumbotron"><h1>Corum</h1>
+
+    <h3>Welcome {% if user-id %}{{user-id}}{% else %}Anonymous!{% endif %}</h3>
+    <p class="lead">Corum is a community driven forum application</p>
+    <p><a class="btn btn-lg btn-success" href="/auth/register" role="button">Sign-Up Today</a></p></div>
+<br>
+
+{% endblock %}

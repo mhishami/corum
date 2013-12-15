@@ -5,14 +5,10 @@
             [noir.util.middleware :as middleware]
             [corum.controller.auth :refer [auth-routes]]
             [corum.controller.home :refer [home-routes]]
-            [corum.views.layout :as layout]))
+            [corum.views.template :as template]))
 
 (defn not-found []
-  (layout/base {} "Opps!!"
-    [:div {:class "jumbotron"}
-     [:h1 "Sorry!"]
-     [:p {:class "lead"} "I cannot find the page you're looking for"
-      [:p [:a {:class "btn btn-lg btn-success" :href "/" :role "button"} "Home"]]]]))
+  (template/render "error.html"))
 
 (defroutes app-routes
   (route/resources "/")

@@ -1,0 +1,23 @@
+{% extends "corum/views/templates/base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h2>Login</h2>
+        <form method="POST">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input class="form-control" id="email" name="email" placeholder="Enter Email" type="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" id="password" name="password" placeholder="Password" type="password">
+            </div>
+            <div class="form-group">
+                <input class="btn btn-default btn-success" type="submit" value="Login">&nbsp;
+                <input class="btn" type="reset" value="Reset"></div>
+        </form>
+        <a href="/auth/register">Register</a> | <a href="/auth/reset">Forgot password</a>
+    </div>
+</div>
+{% endblock %}
